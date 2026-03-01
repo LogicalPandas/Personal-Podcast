@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+    <channel>
+        <title>Daily Automated Podcast</title>
+        <link>https://LogicalPandas.github.io/Personal-Podcast</link>
+        <description>Daily newsletter summarized and read aloud by AI.</description>
+        <language>en-us</language>
+        <itunes:author>Automated Bot</itunes:author>
+        <itunes:image href="https://LogicalPandas.github.io/Personal-Podcast/cover.jpg" />
+
+        <item>
+            <title>episode-2026-03-01</title>
+            <pubDate>Sun, 01 Mar 2026 02:22:14 -0000</pubDate>
+            <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-01.mp3" length="4461" type="audio/mpeg"/>
+            <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-01.mp3</guid>
+            <itunes:summary>Daily automated summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+    </channel>
+</rss>
