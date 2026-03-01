@@ -134,8 +134,18 @@ def phase2_map_reduce(entries):
          print(f"Assembly error: {e}")
          return "\n\n".join(segment_scripts)
 
-def phase3_audio_generation(script, out_path):
+def phase3_audio_generation(script, out_path, is_mock):
     print("Phase 3: Audio Generation (Kokoro TTS)")
+    if is_mock:
+        print("MOCK TEST: Skipping full Kokoro generation to save time.")
+        print("Generating a tiny silent MP3 to satisfy GitHub Actions commit...")
+        # Create a silent 1-second wav
+        sf.write("temp_podcast.wav", np.zeros(24000), 24000)
+        subprocess.run(["ffmpeg", "-y", "-i", "temp_podcast.wav", out_path], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        os.remove("temp_podcast.wav")
+        print(f"Successfully saved MOCK {out_path}")
+        return
+
     pipeline = KPipeline(lang_code='a') 
     generator = pipeline(script, voice='af_heart', speed=1)
     
@@ -236,7 +246,7 @@ def main():
     except Exception:
         print("Warning: ffmpeg is not installed on this system. Phase 3 might fail during MP3 conversion.")
     
-    phase3_audio_generation(script, out_mp3)
+    phase3_audio_generation(script, out_mp3, args.local_test)
     retained_files = phase4_archival()
     
     repo_url = os.environ.get("GITHUB_PAGES_URL", "https://example.github.io/podcast")
