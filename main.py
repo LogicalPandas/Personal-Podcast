@@ -12,6 +12,8 @@ from google import genai
 from kokoro import KPipeline
 import soundfile as sf
 import numpy as np
+from pydantic import BaseModel, Field
+from enum import Enum
 
 def get_args():
     parser = argparse.ArgumentParser(description="RSS to Podcast Pipeline")
@@ -98,10 +100,22 @@ def phase2_map_reduce(entries, is_local_test):
     
     categories = ["Global News", "Tech & AI", "Urbanism & Systems", "Social Impact", "Gaming & Hobbies", "Misc"]
     
+    # Define strict schema for tagging
+    class CategoryEnum(str, Enum):
+        global_news = "Global News"
+        tech_ai = "Tech & AI"
+        urbanism = "Urbanism & Systems"
+        social_impact = "Social Impact"
+        gaming = "Gaming & Hobbies"
+        misc = "Misc"
+
+    class ArticleTag(BaseModel):
+        category: CategoryEnum = Field(description="The primary category of the article.")
+
     # 1. Tagging
     tagged_articles = {cat: [] for cat in categories}
     for entry in entries:
-        prompt = f"Categorize this article into exactly one of these categories: {categories}. Return ONLY a JSON object with a single key 'category'.\nHeadline: {entry['title']}\nSnippet: {entry['text'][:500]}"
+        prompt = f"Categorize this article. Return ONLY a JSON object with a single key 'category' matching the Enum.\nHeadline: {entry['title']}\nSnippet: {entry['text'][:500]}"
         try:
             if is_mock:
                 tagged_articles["Misc"].append(entry)
@@ -109,10 +123,17 @@ def phase2_map_reduce(entries, is_local_test):
 
             response = client.models.generate_content(
                 model=model_name,
-                contents=prompt
+                contents=prompt,
+                config=genai.types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    response_schema=ArticleTag,
+                ),
             )
-            txt = response.text.replace('```json', '').replace('```', '').strip()
-            cat = json.loads(txt).get('category', "Misc")
+            # The new SDK parses structured json directly!
+            if response.parsed:
+                cat = response.parsed.category.value
+            else:
+                cat = json.loads(response.text).get('category', "Misc")
             
             if cat in tagged_articles:
                 tagged_articles[cat].append(entry)
