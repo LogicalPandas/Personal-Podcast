@@ -36,16 +36,19 @@ def phase1_ingestion(feed_url, is_local_test):
         print("Set RSS_FEED_URL env var")
         sys.exit(1)
 
+    print(f"Fetching RSS feed from: {feed_url}")
     feed = feedparser.parse(feed_url)
+    print(f"Total entries found in feed: {len(feed.entries)}\n")
+    
     entries = []
     now = datetime.datetime.now(datetime.timezone.utc)
     
     for entry in feed.entries:
-        # Filter for the last 24 hours
+        # Filter for the last 3 days (259200 seconds) to try and grab enough articles for a full podcast
         if hasattr(entry, 'published_parsed') and entry.published_parsed:
             import time
             dt = datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed), datetime.timezone.utc)
-            if (now - dt).total_seconds() > 86400:
+            if (now - dt).total_seconds() > 259200:
                 continue
 
         link = entry.link
