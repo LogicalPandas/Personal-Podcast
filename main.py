@@ -98,14 +98,13 @@ def phase2_map_reduce(entries, is_local_test):
         client = None
         model_name = None
     
-    categories = ["Global News", "Tech & AI", "Urbanism & Systems", "Social Impact", "Gaming & Hobbies", "Misc"]
+    categories = ["Global News", "Tech & AI", "Social Impact & Humanitarian", "Gaming & Hobbies", "Misc"]
     
     # Define strict schema for tagging
     class CategoryEnum(str, Enum):
         global_news = "Global News"
         tech_ai = "Tech & AI"
-        urbanism = "Urbanism & Systems"
-        social_impact = "Social Impact"
+        social_impact = "Social Impact & Humanitarian"
         gaming = "Gaming & Hobbies"
         misc = "Misc"
 
