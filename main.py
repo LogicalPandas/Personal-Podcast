@@ -8,7 +8,7 @@ import glob
 from email.utils import formatdate
 import feedparser
 import trafilatura
-import google.generativeai as genai
+from google import genai
 from kokoro import KPipeline
 import soundfile as sf
 import numpy as np
@@ -78,9 +78,9 @@ def phase2_map_reduce(entries, is_local_test):
     is_mock = is_local_test or api_key == "mock_key" or not api_key
     
     if not is_mock:
-        genai.configure(api_key=api_key)
-    
-    model = genai.GenerativeModel("gemini-1.5-flash-latest") if not is_mock else None
+        client = genai.Client(api_key=api_key)
+    else:
+        client = None
     
     categories = ["Global News", "Tech & AI", "Urbanism & Systems", "Social Impact", "Gaming & Hobbies", "Misc"]
     
@@ -93,7 +93,10 @@ def phase2_map_reduce(entries, is_local_test):
                 tagged_articles["Misc"].append(entry)
                 continue
 
-            response = model.generate_content(prompt)
+            response = client.models.generate_content(
+                model='gemini-1.5-flash',
+                contents=prompt
+            )
             txt = response.text.replace('```json', '').replace('```', '').strip()
             cat = json.loads(txt).get('category', "Misc")
             
@@ -119,7 +122,10 @@ def phase2_map_reduce(entries, is_local_test):
                 segment_scripts.append(f"In {cat} today, we look at exciting updates: {articles[0]['title']}.")
                 continue
 
-            res = model.generate_content(prompt)
+            res = client.models.generate_content(
+                model='gemini-1.5-flash',
+                contents=prompt
+            )
             segment_scripts.append(res.text)
         except Exception as e:
             print(f"Segment summary error for {cat}: {e}")
@@ -131,7 +137,10 @@ def phase2_map_reduce(entries, is_local_test):
         if is_mock:
              return "Welcome to the daily podcast. " + " ".join(segment_scripts) + " Thanks for listening."
              
-        final_res = model.generate_content(assembly_prompt)
+        final_res = client.models.generate_content(
+            model='gemini-1.5-flash',
+            contents=assembly_prompt
+        )
         return final_res.text
     except Exception as e:
          print(f"Assembly error: {e}")

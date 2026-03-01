@@ -1,6 +1,6 @@
 feedparser
 trafilatura
-google-generativeai
+google-genai
 kokoro
 soundfile
 pydub
