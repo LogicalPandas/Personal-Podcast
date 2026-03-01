@@ -237,7 +237,7 @@ def main():
          
     print("\n=== Final Assembled Script ===\n", script, "\n============================\n")
     
-    today_str = datetime.datetime.now().strftime("%Y-%m-%d")
+    today_str = datetime.datetime.now().strftime("%Y-%m-%d-%H%M%S")
     out_mp3 = f"episode-{today_str}.mp3"
     
     # Check ffmpeg availability locally
