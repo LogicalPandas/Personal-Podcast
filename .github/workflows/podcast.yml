@@ -2,7 +2,7 @@ name: Generate Daily Podcast
 
 on:
   schedule:
-    - cron: '0 9 * * *' # 09:00 UTC
+    - cron: '0 11 * * *' # 11:00 UTC (4:00 AM MST / 5:00 AM MDT)
   workflow_dispatch: # Enable manual run
     inputs:
       run_test:
