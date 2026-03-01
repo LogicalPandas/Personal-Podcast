@@ -46,11 +46,11 @@ def phase1_ingestion(feed_url, is_local_test):
     now = datetime.datetime.now(datetime.timezone.utc)
     
     for entry in feed.entries:
-        # Filter for the last 3 days (259200 seconds) to try and grab enough articles for a full podcast
+        # Filter for the last 24 hours (86400 seconds)
         if hasattr(entry, 'published_parsed') and entry.published_parsed:
             import time
             dt = datetime.datetime.fromtimestamp(time.mktime(entry.published_parsed), datetime.timezone.utc)
-            if (now - dt).total_seconds() > 259200:
+            if (now - dt).total_seconds() > 86400:
                 continue
 
         link = entry.link
@@ -141,7 +141,7 @@ def phase2_map_reduce(entries, is_local_test):
             continue
         
         combined_text = "\n\n".join([f"Headline: {a['title']}\nContent: {a['text'][:2000]}" for a in articles])
-        prompt = f"Act as a podcast producer. Write a conversational, 2-minute radio segment summarizing these {cat} stories. Make it engaging.\n\n{combined_text}"
+        prompt = f"Act as a podcast producer. Write a conversational, 2-minute radio segment summarizing these {cat} stories. Make it engaging. DO NOT include any sound effect instructions, music cues, or speaker labels (like 'Host:' or 'Music:'). Write ONLY the spoken words.\n\n{combined_text}"
         
         try:
             if is_mock:
@@ -157,7 +157,7 @@ def phase2_map_reduce(entries, is_local_test):
             print(f"Segment summary error for {cat}: {e}")
 
     # 3. Show Assembly
-    assembly_prompt = "Act as a podcast host. I will provide you with several segment scripts. Write a punchy intro, smooth transitional sentences between the segments, and a brief sign-off. ONLY return the final read-to-speech script.\n\nSegments:\n" + "\n\n".join(segment_scripts)
+    assembly_prompt = "Act as a podcast host. I will provide you with several segment scripts. Write a punchy intro, smooth transitional sentences between the segments, and a brief sign-off. ONLY return the final read-to-speech script. DO NOT include any sound effect instructions, music cues, or speaker labels (like 'Host:' or 'Music:'). Write ONLY the exact spoken words to be read by the TTS.\n\nSegments:\n" + "\n\n".join(segment_scripts)
     
     try:
         if is_mock:
