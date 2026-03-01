@@ -79,8 +79,18 @@ def phase2_map_reduce(entries, is_local_test):
     
     if not is_mock:
         client = genai.Client(api_key=api_key)
+        
+        # Dynamically find the correct model name to prevent 404 errors
+        model_name = "gemini-1.5-flash" # Fallback
+        for m in client.models.list():
+            if 'generateContent' in m.supported_actions and 'gemini-1.5' in m.name:
+                model_name = m.name
+                break
+        print(f"Using Gemini Model: {model_name}")
+            
     else:
         client = None
+        model_name = None
     
     categories = ["Global News", "Tech & AI", "Urbanism & Systems", "Social Impact", "Gaming & Hobbies", "Misc"]
     
@@ -94,7 +104,7 @@ def phase2_map_reduce(entries, is_local_test):
                 continue
 
             response = client.models.generate_content(
-                model='gemini-1.5-flash',
+                model=model_name,
                 contents=prompt
             )
             txt = response.text.replace('```json', '').replace('```', '').strip()
@@ -123,7 +133,7 @@ def phase2_map_reduce(entries, is_local_test):
                 continue
 
             res = client.models.generate_content(
-                model='gemini-1.5-flash',
+                model=model_name,
                 contents=prompt
             )
             segment_scripts.append(res.text)
@@ -138,7 +148,7 @@ def phase2_map_reduce(entries, is_local_test):
              return "Welcome to the daily podcast. " + " ".join(segment_scripts) + " Thanks for listening."
              
         final_res = client.models.generate_content(
-            model='gemini-1.5-flash',
+            model=model_name,
             contents=assembly_prompt
         )
         return final_res.text
