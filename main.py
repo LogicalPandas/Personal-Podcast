@@ -82,17 +82,9 @@ def phase2_map_reduce(entries, is_local_test):
     if not is_mock:
         client = genai.Client(api_key=api_key)
         
-        # Dynamically find the correct model name to prevent 404 errors
-        model_name = "gemini-1.5-flash" # Fallback
-        print("Available Gemini Models:")
-        for m in client.models.list():
-            if 'gemini' in m.name:
-                print(f"- {m.name} (Actions: {m.supported_actions})")
-            if 'generateContent' in m.supported_actions and 'gemini' in m.name and 'flash' in m.name and 'pro' not in m.name:
-                model_name = m.name
-                # Keep looping to let it print all models, but we've found a valid one
-        
-        print(f"\nSelecting Gemini Model: {model_name}")
+        # Hardcoded to bypass API permission errors on models.list()
+        model_name = "gemini-2.5-flash-lite"
+        print(f"Using Gemini Model: {model_name}")
             
     else:
         client = None
