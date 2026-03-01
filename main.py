@@ -66,13 +66,13 @@ def phase1_ingestion(feed_url, is_local_test):
     print(f"Ingested {len(entries)} articles from the last 24h.")
     return entries
 
-def phase2_map_reduce(entries):
+def phase2_map_reduce(entries, is_local_test):
     print("Phase 2: AI Map-Reduce Writers' Room")
     if not entries:
         return ""
         
     api_key = os.environ.get("GEMINI_API_KEY", "")
-    is_mock = api_key == "mock_key" or not api_key
+    is_mock = is_local_test or api_key == "mock_key" or not api_key
     
     if not is_mock:
         genai.configure(api_key=api_key)
@@ -230,7 +230,7 @@ def main():
         print("No new entries to process.")
         return
         
-    script = phase2_map_reduce(entries)
+    script = phase2_map_reduce(entries, args.local_test)
     if not script:
          print("Failed to generate script.")
          return
