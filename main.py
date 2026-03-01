@@ -80,7 +80,7 @@ def phase2_map_reduce(entries, is_local_test):
     if not is_mock:
         genai.configure(api_key=api_key)
     
-    model = genai.GenerativeModel("gemini-1.5-flash") if not is_mock else None
+    model = genai.GenerativeModel("gemini-1.5-flash-latest") if not is_mock else None
     
     categories = ["Global News", "Tech & AI", "Urbanism & Systems", "Social Impact", "Gaming & Hobbies", "Misc"]
     
