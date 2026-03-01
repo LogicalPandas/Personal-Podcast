@@ -83,7 +83,7 @@ def phase2_map_reduce(entries, is_local_test):
         # Dynamically find the correct model name to prevent 404 errors
         model_name = "gemini-1.5-flash" # Fallback
         for m in client.models.list():
-            if 'generateContent' in m.supported_actions and 'gemini-1.5' in m.name:
+            if 'generateContent' in m.supported_actions and 'gemini-1.5' in m.name and 'flash' in m.name and '8b' not in m.name:
                 model_name = m.name
                 break
         print(f"Using Gemini Model: {model_name}")
