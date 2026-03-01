@@ -59,6 +59,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add episode-*.mp3 podcast.xml
+          git add podcast.xml
+          git add episode-*.mp3 || true
           git commit -m "chore: add daily podcast episode and update feed" || exit 0
           git push
