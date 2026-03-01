@@ -1,0 +1,6 @@
+feedparser
+trafilatura
+google-generativeai
+kokoro
+soundfile
+pydub
