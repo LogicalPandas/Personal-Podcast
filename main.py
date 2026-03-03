@@ -157,7 +157,16 @@ def phase2_map_reduce(entries, is_local_test):
             print(f"Segment summary error for {cat}: {e}")
 
     # 3. Show Assembly
-    assembly_prompt = "Act as a podcast host. I will provide you with several segment scripts. Write a punchy intro, smooth transitional sentences between the segments, and a brief sign-off. ONLY return the final read-to-speech script. DO NOT include any sound effect instructions, music cues, or speaker labels (like 'Host:' or 'Music:'). Write ONLY the exact spoken words to be read by the TTS.\n\nSegments:\n" + "\n\n".join(segment_scripts)
+    assembly_prompt = (
+        "Act as a podcast host. I will provide you with several segment scripts. "
+        "Your job is to weave them together into a single, cohesive daily podcast episode. "
+        "Write a punchy intro to start the show, and a brief sign-off at the end. "
+        "CRITICAL INSTRUCTION: You MUST keep the original text of the segment scripts EXACTLY as provided. "
+        "Do NOT rewrite, summarize, or alter the core content of the segments. "
+        "Instead, write smooth, contextual transitional sentences BETWEEN the segments to connect them naturally. "
+        "DO NOT include any sound effect instructions, music cues, or speaker labels (like 'Host:' or 'Music:'). "
+        "Write ONLY the exact spoken words to be read by the TTS.\n\nSegments:\n"
+    ) + "\n\n---\n\n".join(segment_scripts)
     
     try:
         if is_mock:
@@ -275,7 +284,7 @@ def main():
          
     print("\n=== Final Assembled Script ===\n", script, "\n============================\n")
     
-    today_str = datetime.datetime.now().strftime("%Y-%m-%d-%H%M%S")
+    today_str = datetime.datetime.now().strftime("%Y-%m-%d")
     out_mp3 = f"episode-{today_str}.mp3"
     
     # Check ffmpeg availability locally
