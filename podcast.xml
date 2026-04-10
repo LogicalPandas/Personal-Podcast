@@ -9,8 +9,16 @@
         <itunes:image href="https://LogicalPandas.github.io/Personal-Podcast/cover.jpg" />
 
         <item>
+            <title>episode-2026-04-10</title>
+            <pubDate>Fri, 10 Apr 2026 11:54:13 -0000</pubDate>
+            <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-10.mp3" length="1430349" type="audio/mpeg"/>
+            <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-10.mp3</guid>
+            <itunes:summary>Daily automated summary.</itunes:summary>
+            <itunes:explicit>no</itunes:explicit>
+        </item>
+        <item>
             <title>episode-2026-04-09</title>
-            <pubDate>Thu, 09 Apr 2026 12:01:43 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-09.mp3" length="1686669" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-09.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -18,7 +26,7 @@
         </item>
         <item>
             <title>episode-2026-04-08</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-08.mp3" length="1166157" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-08.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -26,7 +34,7 @@
         </item>
         <item>
             <title>episode-2026-04-07</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-07.mp3" length="1012461" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-07.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -34,7 +42,7 @@
         </item>
         <item>
             <title>episode-2026-04-06</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-06.mp3" length="584877" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-06.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -42,7 +50,7 @@
         </item>
         <item>
             <title>episode-2026-04-05</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-05.mp3" length="721965" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-05.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -50,7 +58,7 @@
         </item>
         <item>
             <title>episode-2026-04-04</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-04.mp3" length="982221" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-04.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -58,7 +66,7 @@
         </item>
         <item>
             <title>episode-2026-04-03</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-03.mp3" length="785421" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-03.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -66,7 +74,7 @@
         </item>
         <item>
             <title>episode-2026-04-02</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-02.mp3" length="959949" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-02.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -74,7 +82,7 @@
         </item>
         <item>
             <title>episode-2026-04-01</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-01.mp3" length="1682253" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-04-01.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -82,7 +90,7 @@
         </item>
         <item>
             <title>episode-2026-03-31</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-31.mp3" length="741933" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-31.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -90,7 +98,7 @@
         </item>
         <item>
             <title>episode-2026-03-30</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-30.mp3" length="805581" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-30.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -98,7 +106,7 @@
         </item>
         <item>
             <title>episode-2026-03-28</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-28.mp3" length="1480173" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-28.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -106,7 +114,7 @@
         </item>
         <item>
             <title>episode-2026-03-27</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-27.mp3" length="1654221" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-27.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -114,7 +122,7 @@
         </item>
         <item>
             <title>episode-2026-03-26</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-26.mp3" length="1103565" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-26.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -122,7 +130,7 @@
         </item>
         <item>
             <title>episode-2026-03-25</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-25.mp3" length="1829037" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-25.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -130,7 +138,7 @@
         </item>
         <item>
             <title>episode-2026-03-24</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-24.mp3" length="186381" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-24.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -138,7 +146,7 @@
         </item>
         <item>
             <title>episode-2026-03-23</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-23.mp3" length="608685" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-23.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -146,7 +154,7 @@
         </item>
         <item>
             <title>episode-2026-03-21</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-21.mp3" length="1599597" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-21.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -154,7 +162,7 @@
         </item>
         <item>
             <title>episode-2026-03-20</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-20.mp3" length="1242669" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-20.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -162,7 +170,7 @@
         </item>
         <item>
             <title>episode-2026-03-19</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-19.mp3" length="886989" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-19.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -170,7 +178,7 @@
         </item>
         <item>
             <title>episode-2026-03-18</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-18.mp3" length="994413" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-18.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -178,7 +186,7 @@
         </item>
         <item>
             <title>episode-2026-03-17</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-17.mp3" length="975789" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-17.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -186,7 +194,7 @@
         </item>
         <item>
             <title>episode-2026-03-15</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-15.mp3" length="652749" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-15.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -194,7 +202,7 @@
         </item>
         <item>
             <title>episode-2026-03-14</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-14.mp3" length="949005" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-14.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -202,7 +210,7 @@
         </item>
         <item>
             <title>episode-2026-03-13</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-13.mp3" length="1084653" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-13.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -210,7 +218,7 @@
         </item>
         <item>
             <title>episode-2026-03-12</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-12.mp3" length="1084653" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-12.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -218,7 +226,7 @@
         </item>
         <item>
             <title>episode-2026-03-11</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-11.mp3" length="1410573" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-11.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -226,7 +234,7 @@
         </item>
         <item>
             <title>episode-2026-03-10</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-10.mp3" length="1184685" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-10.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -234,7 +242,7 @@
         </item>
         <item>
             <title>episode-2026-03-08</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-08.mp3" length="542541" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-08.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -242,7 +250,7 @@
         </item>
         <item>
             <title>episode-2026-03-07</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-07.mp3" length="1237773" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-07.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -250,7 +258,7 @@
         </item>
         <item>
             <title>episode-2026-03-06</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-06.mp3" length="1141197" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-06.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -258,7 +266,7 @@
         </item>
         <item>
             <title>episode-2026-03-05</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-05.mp3" length="756237" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-05.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -266,7 +274,7 @@
         </item>
         <item>
             <title>episode-2026-03-04</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-04.mp3" length="1119213" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-04.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -274,7 +282,7 @@
         </item>
         <item>
             <title>episode-2026-03-03-113624</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-03-113624.mp3" length="1099341" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-03-113624.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -282,7 +290,7 @@
         </item>
         <item>
             <title>episode-2026-03-02-113448</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-02-113448.mp3" length="566349" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-02-113448.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -290,7 +298,7 @@
         </item>
         <item>
             <title>episode-2026-03-01</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-01.mp3" length="4461" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-01.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
@@ -298,7 +306,7 @@
         </item>
         <item>
             <title>episode-2026-03-01-112244</title>
-            <pubDate>Thu, 09 Apr 2026 11:54:24 -0000</pubDate>
+            <pubDate>Fri, 10 Apr 2026 11:48:19 -0000</pubDate>
             <enclosure url="https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-01-112244.mp3" length="980109" type="audio/mpeg"/>
             <guid isPermaLink="true">https://LogicalPandas.github.io/Personal-Podcast/episode-2026-03-01-112244.mp3</guid>
             <itunes:summary>Daily automated summary.</itunes:summary>
